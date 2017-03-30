@@ -13,7 +13,7 @@ import com.nero.jandan.R;
  * Created by lishiyan on 16/12/6.
  */
 
-public abstract class BaseAppcompatActivity extends AppCompatActivity{
+public abstract class BaseActivity extends AppCompatActivity{
 
 	protected Toolbar mToolbar;
 
