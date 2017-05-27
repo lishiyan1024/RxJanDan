@@ -1,28 +1,21 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:tools="http://schemas.android.com/tools"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             tools:context="com.nero.jandan.ui.fragment.FreshNewsFragment">
-
-    <include
-        android:id="@+id/actionbarToolbar"
-        layout="@layout/layout_fresh_news_actionbar_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    </include>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nero.jandan.ui.fragment.FreshNewsFragment">
 
     <WebView
         android:id="@+id/wvFreshNews"
-        android:layout_marginTop="?attr/actionBarSize"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     </WebView>
 
-    <ProgressBar
-        android:id="@+id/progressBar"
-        android:visibility="visible"
-        android:layout_gravity="center"
-        android:layout_width="70dp"
-        android:layout_height="70dp"/>
+    <!--<ProgressBar-->
+        <!--android:id="@+id/progressBar"-->
+        <!--android:visibility="visible"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_width="70dp"-->
+        <!--android:layout_height="70dp"/>-->
 
 </FrameLayout>

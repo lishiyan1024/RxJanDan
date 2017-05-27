@@ -15,7 +15,9 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.activity.NavigationDrawerActivity">
+        <activity
+            android:name=".ui.activity.NavigationDrawerActivity"
+            android:configChanges="orientation|keyboardHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -23,7 +25,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.activity.FreshNewsActivity">
-
+        </activity>
+        <activity android:name=".ui.activity.DummyActivity"
+            android:theme="@style/leak_canary_Theme.Transparent">
         </activity>
     </application>
 

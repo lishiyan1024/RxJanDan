@@ -8,7 +8,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
-import android.widget.ProgressBar;
 
 import com.nero.jandan.R;
 import com.nero.jandan.injector.component.ApplicationComponent;
@@ -34,8 +33,8 @@ public class FreshNewsFragment extends Fragment implements FreshNewsContract.Vie
 	FreshNewsContract.Presenter freshNewsPresenter;
 	@BindView(R.id.wvFreshNews)
 	WebView wvFreshNews;
-	@BindView(R.id.progressBar)
-	ProgressBar progressBar;
+//	@BindView(R.id.progressBar)
+	//	ProgressBar progressBar;
 
 	private String newsId;
 	private String newsTitle;
@@ -103,7 +102,7 @@ public class FreshNewsFragment extends Fragment implements FreshNewsContract.Vie
 		//ButterKnife.bind(this,rootView);
 		wvFreshNews = (WebView)rootView.findViewById(R.id.wvFreshNews);
 		wvFreshNews.getSettings().setJavaScriptEnabled(true);
-		progressBar = (ProgressBar)rootView.findViewById(R.id.progressBar);
+		//progressBar = (ProgressBar)rootView.findViewById(R.id.progressBar);
 		toolbar = (Toolbar)rootView.findViewById(R.id.actionbarToolbar);
 
 //		wvFreshNews.setOnScrollChangeListener(scrollChangeListener);
@@ -118,12 +117,12 @@ public class FreshNewsFragment extends Fragment implements FreshNewsContract.Vie
 
 	@Override
 	public void hideProgressBar(){
-		progressBar.setVisibility(View.INVISIBLE);
+		//progressBar.setVisibility(View.INVISIBLE);
 	}
 
 	@Override
 	public void showProgressBar(){
-		progressBar.setVisibility(View.VISIBLE);
+		//progressBar.setVisibility(View.VISIBLE);
 	}
 
 	@Override
